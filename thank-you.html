@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TrackShop - Thank You</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header"><a class="logo" href="index.html">TrackShop</a></header>
+<main class="container narrow center">
+  <h1>Thank You!</h1>
+  <p>Your demo order has been placed.</p>
+  <p>Order ID: <strong id="order-id"></strong></p>
+  <a class="button" href="index.html">Continue Shopping</a>
+</main>
+<script>
+document.getElementById("order-id").textContent =
+  localStorage.getItem("last_order_id") || "DEMO-ORDER";
+</script>
+</body>
+</html>
